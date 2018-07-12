@@ -32,6 +32,7 @@ type RunConfig struct {
 	InternetChargeType       string `mapstructure:"internet_charge_type"`
 	InternetMaxBandwidthOut  int    `mapstructure:"internet_max_bandwidth_out"`
 	TemporaryKeyPairName     string `mapstructure:"temporary_key_pair_name"`
+	UsePrivateIp             bool   `mapstructure:"use_private_ip_address"`
 
 	// Communicator settings
 	Comm           communicator.Config `mapstructure:",squash"`
